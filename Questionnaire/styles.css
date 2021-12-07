@@ -1,0 +1,245 @@
+    /* common styles */
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        background-image: url("https://res.cloudinary.com/webwiznitr/image/upload/v1627814997/Assets/Images/hackodishabg_mwafwh.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: sans-serif;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background-color: #000;
+    }
+    
+    ul {
+        list-style-type: none;
+        /* get rid of bullet points on side of list items */
+    }
+    /* common style ends */
+    /* container */
+    
+    .container {
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    h1 {
+        color: #fff;
+        font-size: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* todo-form */
+    
+    .todo-form {
+        margin: 40px 0px;
+    }
+    
+    .todo-input {
+        width: 250px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+    
+    .add-button {
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 7px;
+        font-size: 1.2rem;
+    }
+    /* todo-form style ends */
+    /* todo-items */
+    
+    .todo-items {
+        min-width: 1500px;
+        color: #fff;
+        margin-top: 2px;
+        background-size: cover;
+    }
+    /* each li with class="item" */
+    
+    .item {
+        background-color: #444444;
+        padding: 10px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        border-radius: 7px;
+        background-size: cover;
+    }
+    
+    .item:first-child {
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    
+    .item:last-child {
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    /* item style end */
+    
+    .checkbox {
+        margin-right: 10px;
+    }
+    
+    .delete-button {
+        float: right;
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+        border-radius: 7px;
+        padding: 2px 5px;
+        margin-left: 10px;
+        font-size: 1.1rem;
+        font-weight: 550;
+    }
+    /* applied when the todo item is checked */
+    
+    .checked {
+        text-decoration: line-through;
+    }
+    
+    .preques {
+        color: #fff;
+        /* min-width: 880px; */
+        margin-top: 2px;
+        background-size: cover;
+        /* background-color: #444444; */
+        padding: 10px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        border-radius: 7px;
+        overflow-x: auto;
+    }
+    
+    table.tableizer-table {
+        font-size: 12px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sans-serif;
+    }
+    
+    .tableizer-table td {
+        padding: 4px;
+        /* margin: 3px; */
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /* background-color: #242526; */
+        font-size: 1.1rem;
+        margin-top: 10px;
+        border-radius: 7px;
+        background-color: #444444;
+        margin-top: 5px;
+        padding: 10px;
+    }
+    
+    .tableizer-table th {
+        background-color: #000;
+        color: #FFF;
+        font-weight: bold;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.1rem;
+        padding: 10px;
+        border-radius: 7px;
+        padding: 10px;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    @media screen and (max-width: 892px) {
+        #topics {
+            display: none;
+        }
+        #mytable tr td:first-child {
+            display: none;
+        }
+        .preques {
+            color: #fff;
+            margin-top: 2px;
+            background-size: cover;
+            /* background-color: #444444; */
+            padding: 10px;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            border-radius: 7px;
+            overflow-x: auto;
+            height: auto;
+            width: auto;
+        }
+        .tableizer-table td {
+            padding: 4px;
+            /* margin: 3px; */
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            /* background-color: #242526; */
+            font-size: 1.1rem;
+            margin-top: 10px;
+            border-radius: 7px;
+            background-color: #444444;
+            margin-top: 5px;
+            padding: 10px;
+            word-wrap: break-word;
+            width: auto;
+        }
+        #mytable tr {
+            width: auto;
+        }
+    }
+    
+    @media screen and (max-width: 486px) {
+        .todo-form {
+            margin: 40px 0px;
+            display: flex;
+            flex-direction: column;
+        }
+        .add-button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            padding: 7px;
+            font-size: 1.2rem;
+            margin: auto;
+            margin-top: 10%;
+        }
+    }
+    
+    @media screen and (max-width: 428px) {
+        .container h1 {
+            text-align: center;
+        }
+    }
+    /* todo-items style ends */
+    /* container style ends */
